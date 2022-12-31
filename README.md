@@ -4,7 +4,7 @@
 + risk_kit.py: library for investment management developed in the course **Introduction to Portfolio Construction and Analysis with Python**.
 + simulation.py: script in python to simulate, compute some basic stats, and analyse asset weight behavior over time.
 <br>
-**OBS**: In addition, we also utilize the library python-bcb, which facilitates collecting the data from the Central Bank of Brazil. This library was developed by [Wilson Freitas][https://www.linkedin.com/in/wilson-freitas/?locale=pt_BR], an great Brazillian quant.
+**OBS**: In addition, we also utilize the library python-bcb, which facilitates collecting the data from the Central Bank of Brazil. This library was developed by [Wilson Freitas](https://www.linkedin.com/in/wilson-freitas/?locale=pt_BR), an great Brazillian quant.
 
 ## Assets used in the Simulation
 
@@ -47,3 +47,10 @@ The chosen portfolio is composed of:
 
 ### Rebalanced Portfolio
 ![Alt text](plots/weights_rabalanced.png?raw=true "Title")
+
+
+## Conclusion
+
+We can see that the Rebalanced Portfolio has the biggest Sharp ratio over the period, which means it had the best relationship between return and risk.
+<br>
+There are many ways to rebalance asset portfolios, and the MOOC course on Coursera _Investment Management with Python and Machine Learning Specialization_ introduce many of them, I strongly recommend it. A simple and disciplined asset allocation should be the way to go for the majority of the investors.
