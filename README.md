@@ -14,3 +14,13 @@
 + IMA-B 5: basket of goverment bonds that give a cupon + inflation rate, with less than 5 years of maturity.
 + IMA-B 5+: basket of goverment bonds that give a cupon + inflation rate, with more than 5 years of maturity.
 
+## Portfolio
+
+The chosen portfolio is composed of:
+| Assets | Weights |
+| ----------- | ----------- |
+| BOVA11 | 20% |
+| IVV | 30% |
+| CDI | 20% |
+| IMA-B 5 | 10% |
+| IMA-B 5+ | 20% |
