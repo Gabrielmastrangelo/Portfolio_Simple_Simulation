@@ -4,7 +4,7 @@
 + risk_kit.py: library for investment management developed in the course **Introduction to Portfolio Construction and Analysis with Python**.
 + simulation.py: script in python to simulate, compute some basic stats, and analyse asset weight behavior over time.
 <br>
-__Obs__: In addition, we also utilize the library python-bcb, which facilitates collecting the data from the Central Bank of Brazil.
+**OBS**: In addition, we also utilize the library python-bcb, which facilitates collecting the data from the Central Bank of Brazil. This library was developed by [Wilson Freitas][https://www.linkedin.com/in/wilson-freitas/?locale=pt_BR], an great Brazillian quant.
 
 ## Assets used in the Simulation
 
