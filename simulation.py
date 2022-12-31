@@ -1,5 +1,6 @@
-#%%
-#Plotting
+'''
+Script to simulate the porftolio
+'''
 
 import yfinance as yf
 import datetime 
@@ -11,6 +12,7 @@ from bcb import currency
 import risk_kit
 import matplotlib.pyplot as plt
 
+plt.style.context('ggplot')
 
 def rebalance_portfolio(lista_capital, lista_weights):
   '''
@@ -130,7 +132,7 @@ def create_stock_portfolio(lista_assets, start_date = None):
 bova = create_stock_portfolio(['BOVA11.SA'])['2015':]
 bova = bova.pct_change()[1:]
 
-#Collect IVV data
+#Collect IVV data in dollars, transform it in reais, and compute its return
 ivv_raw  = pd.DataFrame(yf.download('IVV', interval='1d').Close)['2015':]
 ivv_raw.columns = ['IVV']
 cy = currency.get(['USD'], start='2015-1-01', end='2022-12-30')
@@ -141,7 +143,6 @@ ivv_real = ivv_real.pct_change()[1:]
 ivv_real = pd.DataFrame(ivv_real)
 ivv_real.columns = ['IVV']
 
-#Collect CDI data
 cdi = sgs.get({'cdi':12}, start = '2015-01-01')/100
 
 ipca_long = sgs.get({'ima_b_5_more':12468}, start = '2015-01-01')
@@ -188,10 +189,7 @@ ax = weight_over_time(port_rebalanced).plot(title = 'Weight over Time Rebalanced
 fig = ax.get_figure()
 fig.savefig('plots/weights_rabalanced.png')
 
-
 ax = weight_over_time(port_no_rebalance).plot(title = 'Weight over Time Not-Rebalanced Portfolio')
 fig = ax.get_figure()
 fig.savefig('plots/weights_non-rabalanced.png')
 
-
-# %%
