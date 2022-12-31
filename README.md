@@ -40,5 +40,10 @@ The chosen portfolio is composed of:
 | Portfolio Rebalanced     |           0.130641  |       0.096355   |  -0.457169 |   15.5435  |               0.00870436  |          0.0133886   |    0.451858    |     -0.193758  |
 | Portfolio Not-Rebalanced |           0.124293  |       0.108614   |  -0.378992 |   14.1007  |               0.0099491   |          0.0152618   |    0.346898    |     -0.208792  |
 
+## Asset Portfolio's weight over Time
 
+### Not-rebalanced Portfolio
+![Alt text](plots/weights_non-rabalanced.png?raw=true "Title")
 
+### Rebalanced Portfolio
+![Alt text](plots/weights_rabalanced.png?raw=true "Title")
