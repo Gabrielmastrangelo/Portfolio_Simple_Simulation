@@ -26,10 +26,10 @@ The chosen portfolio is composed of:
 | IMA-B 5+ | 20% |
 
 ## Historical Performance of Individual Assets and the Portfolios
-### Plotting cumulative return
+### Plotting Cumulative Return
 ![Alt text](plots/aggregated_return.png?raw=true "Title")
 
-### Computing simple stats
+### Portfolio Metrics
 |                          |   Annualized Return |   Annualized Vol |   Skewness |   Kurtosis |   Cornish-Fisher VaR (5%) |   Historic CVaR (5%) |   Sharpe Ratio |   Max Drawdown |
 |:-------------------------|--------------------:|-----------------:|-----------:|-----------:|--------------------------:|---------------------:|---------------:|---------------:|
 | BOVA                     |           0.103875  |       0.255146   |  -0.657562 |   15.2042  |               0.0248238   |          0.0362012   |    0.0737549   |     -0.469317  |
@@ -40,7 +40,7 @@ The chosen portfolio is composed of:
 | Portfolio Rebalanced     |           0.130641  |       0.096355   |  -0.457169 |   15.5435  |               0.00870436  |          0.0133886   |    0.451858    |     -0.193758  |
 | Portfolio Not-Rebalanced |           0.124293  |       0.108614   |  -0.378992 |   14.1007  |               0.0099491   |          0.0152618   |    0.346898    |     -0.208792  |
 
-## Asset Portfolio's weight over Time
+## Portfolio Asset's Weight Behavior Over Time
 
 ### Not-rebalanced Portfolio
 ![Alt text](plots/weights_non-rabalanced.png?raw=true "Title")
