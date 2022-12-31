@@ -26,5 +26,6 @@ The chosen portfolio is composed of:
 | IMA-B 5+ | 20% |
 
 ## Historical Performance of Individual Assets and the Portfolios
-![alt text](h[ttp://url/to/img.png](https://github.com/Gabrielmastrangelo/Portfolio_Simple_Simulation/blob/main/plots/aggregated_return.png))
+![Alt text](plots/aggregated_return.png?raw=true "Title")
+
 
