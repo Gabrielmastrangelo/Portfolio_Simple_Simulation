@@ -1,4 +1,4 @@
-# Simulating Portfolios with Brazilian assets
+# Simulating Portfolios with Brazilian Assets
 
 ## Content:
 + risk_kit.py: library for investment management developed in the course **Introduction to Portfolio Construction and Analysis with Python**.
