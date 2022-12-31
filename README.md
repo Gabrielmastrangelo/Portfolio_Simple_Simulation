@@ -53,4 +53,6 @@ The chosen portfolio is composed of:
 
 We can see that the Rebalanced Portfolio has the biggest Sharp ratio over the period, which means it had the best relationship between return and risk.
 <br>
-There are many ways to rebalance asset portfolios, and the MOOC course on Coursera _Investment Management with Python and Machine Learning Specialization_ introduce many of them, I strongly recommend it. A simple and disciplined asset allocation should be the way to go for the majority of the investors.
+There are many ways to rebalance asset portfolios, and the MOOC course on Coursera _Investment Management with Python and Machine Learning Specialization_ introduce many of them, I strongly recommend it. 
+<br>
+A simple and disciplined asset allocation methodology should be the way to go for the majority of the investors.
