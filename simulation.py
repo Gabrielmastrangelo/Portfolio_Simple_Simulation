@@ -12,7 +12,7 @@ from bcb import currency
 import risk_kit
 import matplotlib.pyplot as plt
 
-plt.style.context('ggplot')
+plt.style.use('ggplot')
 
 def rebalance_portfolio(lista_capital, lista_weights):
   '''
