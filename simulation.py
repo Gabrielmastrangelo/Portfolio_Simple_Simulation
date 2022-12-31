@@ -11,6 +11,8 @@ from bcb import sgs
 from bcb import currency
 import risk_kit
 import matplotlib.pyplot as plt
+from matplotlib.ticker import FuncFormatter
+
 
 plt.style.use('ggplot')
 
@@ -163,9 +165,10 @@ port_no_rebalance = compute_historic_return(port, [0.2, 0.3, 0.2,0.1,0.2], rebal
 testing = pd.concat([port, port_rebalanced, port_no_rebalance], axis = 1)
 testing.columns = list(port.columns) + ['Portfolio Rebalanced', 'Portfolio Not-Rebalanced']
 stats = risk_kit.summary_stats(testing, riskfree_rate=0.083481, periods_per_year=252)
-print(stats)
+stats.to_markdown('summary_stats.md')
 
 ax = ((testing+1).cumprod()-1).plot(title='Accumulated Return for Individual Assets and Portfolios')
+ax.yaxis.set_major_formatter(FuncFormatter('{0:.0%}'.format))
 fig = ax.get_figure()
 fig.savefig('plots/aggregated_return.png')
 
@@ -186,10 +189,12 @@ def weight_over_time(portfolio):
   return   result
 
 ax = weight_over_time(port_rebalanced).plot(title = 'Weight over Time Rebalanced Portfolio')
+ax.yaxis.set_major_formatter(FuncFormatter('{0:.0%}'.format))
 fig = ax.get_figure()
 fig.savefig('plots/weights_rabalanced.png')
 
 ax = weight_over_time(port_no_rebalance).plot(title = 'Weight over Time Not-Rebalanced Portfolio')
+ax.yaxis.set_major_formatter(FuncFormatter('{0:.0%}'.format))
 fig = ax.get_figure()
 fig.savefig('plots/weights_non-rabalanced.png')
 
